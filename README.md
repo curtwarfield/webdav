@@ -17,12 +17,12 @@ Here is the format for the command to run a`WebDAV` server:
 ~~~
 rclone serve webdav remote:path [flags]
 ~~~
-Configure the `addr`, `user`, and `pass` flags.
-
 * The `remote:path` is the shared directory for the WebDAV server.
 ~~~
 /media/webdav/
 ~~~
+Configure the `addr`, `user`, and `pass` flags.
+
 * The `addr` flag is used to specify the IP address and port.
 ~~~
 --addr 192.168.4.200:8111
