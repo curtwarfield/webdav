@@ -2,11 +2,11 @@
 
 
 ### Introduction 
-[WebDAV](__http://www.webdav.org/__) is an extension of the `HTTP` protocol that allows you share files remotely. Most web server software such as `Apache HTTP`have built-in `WebDAV` modules but they usually require complex configuration steps.
+[WebDAV](http://www.webdav.org/) is an extension of the `HTTP` protocol that allows you share files remotely. Most web server software such as `Apache HTTP`have built-in `WebDAV` modules but they usually require complex configuration steps.
 
 One of the easiest ways to configure a `WebDAV` server is by using `rclone`.
 
-[Rclone](__https://rclone.org/__) is a command line application used to manage files on cloud storage, but it also be used to configure a `WebDAV` server.
+[Rclone](https://rclone.org/) is a command line application used to manage files on cloud storage, but it also be used to configure a `WebDAV` server.
 
 ### Step 1
 First, you'll need to install `rclone`.
@@ -17,9 +17,9 @@ Here is the format for the command to run a`WebDAV` server:
 ~~~
 rclone serve webdav remote:path [flags]
 ~~~
-We only need to use the `addr`, `user`, and `pass` flags.
+Configure the `addr`, `user`, and `pass` flags.
 
-* The `remote:path` is the shared directory for the WebDAV server. For example:
+* The `remote:path` is the shared directory for the WebDAV server.
 ~~~
 /media/webdav/
 ~~~
@@ -27,7 +27,7 @@ We only need to use the `addr`, `user`, and `pass` flags.
 ~~~
 --addr 192.168.4.200:8111
 ~~~
-The `user` flag is used to specify a username. Using a name that doesn't exist on the system will increase security because the user will only have access to the `WebDAV`directory.
+The `user` flag is used to specify a username. Choose a name that doesn't exist on the server.
 ~~~
 --user poochie
 ~~~
@@ -43,7 +43,7 @@ This works great for testing but it should be configured to run as a service.
 
 ## Step 2
 
-We'll be creating a custom `systemd` unit file to start and stop the `WebDAV` server like a normal service.
+We'll be creating a custom `systemd` unit file to start and stop the `WebDAV` server as a service.
 
 First, we need to `bash` script that will run the `rclone serve` command.
 ~~~
