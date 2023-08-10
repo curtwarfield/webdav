@@ -27,11 +27,11 @@ Configure the `addr`, `user`, and `pass` flags.
 ~~~
 --addr 192.168.4.200:8111
 ~~~
-The `user` flag is used to specify a username. Choose a name that doesn't exist on the server.
+* The `user` flag is used to specify a username. Choose a name that doesn't exist on the server.
 ~~~
 --user poochie
 ~~~
-The `pass` flag is the password for the `WebDAV` user.
+* The `pass` flag is the password for the `WebDAV` user.
 ~~~
 --pass myRandomPassword
 ~~~
