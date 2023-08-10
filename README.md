@@ -45,7 +45,7 @@ This works great for testing but should be configured to run as a service.
 
 We'll be creating a custom `systemd` unit file to start and stop the `WebDAV` server as a service.
 
-First, we need to `bash` script that will run the `rclone serve` command.
+First, we need to create a `bash` script that will run the `rclone serve` command.
 ~~~
 sudo vi /usr/bin/rclone/rclone_webdav.sh
 ~~~
