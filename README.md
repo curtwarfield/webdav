@@ -17,7 +17,7 @@ Here is the format for the command to run a`WebDAV` server:
 ~~~
 rclone serve webdav remote:path [flags]
 ~~~
-* The `remote:path` is the shared directory for the WebDAV server.
+* The `remote:path` specifies the directory for the WebDAV server.
 ~~~
 /media/webdav/
 ~~~
