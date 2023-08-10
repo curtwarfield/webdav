@@ -39,7 +39,7 @@ Here is the complete command to start the `WebDAV` server:
 ~~~
 rclone serve webdav /media/webdav/ --addr 192.168.4.200:8111 --user poochie --pass myRandomPassword
 ~~~
-This works great for testing but it should be configured to run as a service.
+This works great for testing but should be configured to run as a service.
 
 ## Step 2
 
